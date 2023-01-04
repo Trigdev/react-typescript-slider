@@ -48,6 +48,11 @@ Global Styles
 ===============
 */
 
+@font-face {
+  font-family: 'Poppins Regular';
+  src: url("./assets/fonts/Poppins-Regular.otf");
+}
+
 *,
 ::after,
 ::before {
@@ -56,9 +61,9 @@ Global Styles
   box-sizing: border-box;
 }
 body {
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen,
+  font-family: 'Poppins Regular', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen,
     Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-  background: var(--clr-grey-10);
+  background: var(--clr-grey-1);
   color: var(--clr-grey-1);
   line-height: 1.5;
   font-size: 0.875rem;
@@ -252,3 +257,24 @@ article.lastSlide {
 article.nextSlide {
   transform: translateX(100%);
 }
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #f8f9fa;
+  box-shadow: inset 2px 2px 5px 0 rgba(#fff, 0.5);
+  border-radius: 100px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-image: conic-gradient(left 180deg, #ecdee3, #e6dde3);
+}
+
+::-webkit-scrollbar-track {
+  background-color: #d9e7ef;
+  border-radius: 200px;
+  border: 2px solid rgb(227, 221, 221);
+}
+
